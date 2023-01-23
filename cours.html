@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </head>
+    <style>
+        .main{
+            background-size: 100% 100%;
+            background-color: rgba(5, 48, 75, 0.5);
+        }
+        .manu{ 
+          height: 100px;
+          background-color: rgba(149, 187, 218, 0.5);
+        }
+        .logo{
+          display: inline-flex;
+          margin-top: 20px;
+          margin-left: 20px;
+        }
+        .logo img{
+          height: 50px;
+          width: 50px;
+        }
+        .navbar{
+          float: right;
+          margin-right: 20px;
+          margin-top: 20px;
+        }
+        .navbar a{
+          width: 90px;
+        }
+        .slider{
+            margin: auto;
+            width: 90%;
+            margin-top: 150px;
+        }
+        .slider h5{
+            color: rgb(255, 255, 255);
+        }
+        .btn{
+            background-color: rgb(32, 199, 79);
+            border-radius: 100px;
+        }
+        .btn a{
+            text-decoration: none;
+        }
+    </style>
+    <body>
+        <div class="main">
+            <!-- navbar -->
+            <div class="manu">
+              <div class="logo">
+                <img src="images/4734043.png">
+              </div>
+              <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                      <a class="nav-link" href="about.html">AboutUs</a>
+                      <a class="nav-link active" href="cours.html">Courses</a>
+                      <a class="nav-link" href="contact.html">ContactUs</a>
+                    </div>
+                  </div>
+                </div>
+                </nav>
+            </div>
+            <!-- course -->
+            <section class="course">
+                <div class="slider">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 3"></button>
+                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <a href="software.html"><img src="images/development.jpeg" class="d-block w-100"  height="500"></a>
+                            <div class="carousel-caption d-none d-md-block d-sm-block">
+                              <h5>Software and Web Development Courses</h5>
+                              <button type="button" class="btn"><a href="software.html"> Open </a></button>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <a href="ai.html"><img src="images/AI.jpeg" class="d-block w-100"  height="500"></a>
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>AI, Machine Learning and Data Science Courses</h5>
+                              <button type="button" class="btn"><a href="ai.html"> Open </a></button>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <a href="buisness.html"><img src="images/buisness.jpeg" class="d-block w-100"  height="500"></a>
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Buisness Essentials Courses</h5>
+                              <button type="button" class="btn"><a href="buisness.html"> Open </a></button>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <a href="digital.html"><img src="images/digital.webp" class="d-block w-100"  height="500"></a>
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Digital Marketing and Social Media Courses</h5>
+                              <button type="button" class="btn"><a href="digital.html"> Open </a></button>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <a href="persnol.html"><img src="images/persnol.jpeg" class="d-block w-100"  height="500"></a>
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Psycology, Persnol Development, and Health Courses</h5>
+                              <button type="button" class="btn"><a href="persnol.html"> Open </a></button>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+                </div>
+            </section>
+
+
+        </div>
+    </body>
+</html>

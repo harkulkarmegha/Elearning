@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet"href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="main.js"></script>
+    <style>
+        .main{
+            height: 90vh;
+            background: linear-gradient(#5454dc88, #1f0fa788, #67262688);
+        }
+        .manu{ 
+          height: 100px;
+          background-color: rgba(149, 187, 218, 0.5);
+        }
+        .logo{
+          display: inline-flex;
+          margin-top: 20px;
+          margin-left: 20px;
+        }
+        .logo img{
+          height: 50px;
+          width: 50px;
+        }
+        .navbar{
+          float: right;
+          margin-right: 20px;
+          margin-top: 20px;
+        }
+        .navbar a{
+          width: 90px;
+        }
+        .wave{
+            width: 100%;
+            background-size: 100% 100%;
+        }
+        .content{
+            margin-top: -250px;
+        }
+        .image{
+            height: 300px;
+            width: 300px;
+            float: right;
+            margin-top: 50px;
+        }
+        .title{
+            margin-top: 10%;
+            margin-left: 70px;
+            font-style: italic;
+            display: inline-flex;
+        }
+        .title h1{
+            font-size: 50px;
+        }
+        @media only screen and (max-width:980px){
+            .content{
+                margin-top: -85px;
+            }
+        .title{
+            margin-left: 45px;
+        }
+        .title h1{
+            font-size: 25px;
+        }
+        }
+        .d-grid{
+            width: 200px;
+        }
+        .btn{
+            margin-top: 20px;
+            border-radius: 20px;
+            border-color: rgb(128, 41, 209);
+        }
+        .btn img{
+            height: 20px;
+            width: 20px;
+            margin-right: 20px;
+        }
+        .info{
+          margin-top: -10px;
+          background: linear-gradient(#7e76c988, #720c9d88, #a19dc788);
+        }
+        .col{
+          width: 300px;
+        }
+        .head{
+          margin-left: 50px;
+        }
+        .para{
+          font-size: 10px;
+          font-style: italic;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+        <!-- navbar -->
+        <div class="manu">
+          <div class="logo">
+            <img src="images/4734043.png">
+          </div>
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  <a class="nav-link" href="about.html">AboutUs</a>
+                  <a class="nav-link" href="cours.html">Courses</a>
+                  <a class="nav-link" href="contact.html">ContactUs</a>
+                </div>
+              </div>
+            </div>
+            </nav>
+        </div>
+
+        <img src="images/1665669835081.png" class="image">
+        <div class="title">
+            <h1>Get Started With E-Learning</h1>
+        </div>  
+        <div class="d-grid gap-4 col-2 mx-auto">
+            <button class="btn btn-primary" type="button" data-bs-toggle="modal" data-bs-target="#login"><img src="images/2702162.png"> Log On</button>
+          </div>
+    </div>
+    <!-- logon -->
+
+            <!-- Button trigger modal -->
+            <!-- <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#login" style="color: black; text-decoration: none;">
+              Go To Free Courses
+            </button>  -->
+
+<!-- Modal for login page content -->
+<div class="modal fade" id="login">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header text-center">
+        <h4 class="modal-title text-center w-100 font-weight-bold">Login</h4>
+        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">&times;</button>
+      </div> 
+      <form onsubmit="return validated()" class="bg-light" action="software1.html">
+      <div class="modal-body mx-4">      
+        <div class="md-form">
+          <i class="fas fa-envelope prefix gray-text"></i>
+          <input type="email" class="form-control validate"id="email1">
+          <span id="email1_id" class="text-danger" font="weight-bold"></span>
+          <label data-error="wrong" data-sucsses="right">Email Address</label>
+        </div>
+
+        
+        <div class="md-form">
+          <i class="fas fa-lock prefix gray-text"></i>
+          <input type="password" class="form-control validate"id="pass1">
+          <span id="passwords1" class="text-danger" font="weight-bold"></span>
+          <label data-error="wrong" data-sucsses="right">Password</label>
+          <p class="font-small blue-text d-flex justify-content-center">Forgot<a href="#" class="blue-text ml-1">Password?</a></p>
+        </div>
+
+        <div class="text-center mb-3">
+          <button type="submit" class="btn btn-info">Login</button>
+          <!-- <button type="submit" type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#register">Register</button> -->
+        </div>
+        <p class="font-smalldark-gray-text d-flex justify-content-center">or login with:</p>
+        <div class="row my-3 justify-content-center">
+          <button type="button" class="btn btn-primary z-depth-1a"><i class="fa-brands fa-facebook-f text-center"></i></button> 
+          <button type="button" class="btn btn-info z-depth-1a"><i class="fa-brands fa-twitter text-center"></i></button> 
+          <button type="button" class="btn btn-danger z-depth-1a"><i class="fa-brands fa-google text-center"></i></button> 
+        </div>
+
+        <div class="text-center mb-3">
+          <p>Not yet a member?</p>
+          <!-- <button type="submit" type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#register" data-bs-dismiss="modal">Register</button> -->
+          <button type="submit" type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#register" >Register</button>
+        </div>
+        
+      </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal for register page content -->
+<div class="modal fade" id="register">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header text-center">
+        <h4 class="modal-title text-center w-100 font-weight-bold">Register</h4>  
+        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">&times;</button>    
+      </div>
+
+      <form onsubmit="return validate()" class="bg-light" action="software1.html">
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <i class="fas fa-user prefix gray-text"></i>
+          <input type="text" class="form-control validate" id="user">
+          <span id="username" class="text-danger" font="weight-bold"></span>
+          <label data-error="wrong" data-sucsses="right">Your Name</label>
+        </div>  
+        
+        
+          <div class="md-form mb-5">
+            <i class="fas fa-envelope prefix gray-text"></i>
+            <input type="email" class="form-control validate" id="email">
+            <span id="email_id" class="text-danger" font="weight-bold"></span>
+            <label data-error="wrong" data-sucsses="right">Email Address</label>
+          </div>
+  
+        
+        <div class="md-form mb-5">
+          <i class="fas fa-lock prefix gray-text"></i>
+          <input type="password" class="form-control validate" id="pass">
+          <span id="passwords" class="text-danger" font="weight-bold"></span>
+          <label data-error="wrong" data-sucsses="right">Password</label>
+        </div>
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <!-- <input type="submit" class="btn btn-info" name="submit" value="submit" autocomplete="off"> -->
+            <!-- <button type="submit" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#login" data-bs-dismiss="modal">Submit</button> -->
+            <button type="submit" class="btn btn-info">Submit</button>
+      </div>
+
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+        <!-- content -->
+        <div class="content">
+            <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#a19dc788" fill-opacity="1" d="M0,192L20,176C40,160,80,128,120,122.7C160,117,200,139,240,128C280,117,320,75,360,90.7C400,107,440,181,480,192C520,203,560,149,600,112C640,75,680,53,720,42.7C760,32,800,32,840,53.3C880,75,920,117,960,154.7C1000,192,1040,224,1080,197.3C1120,171,1160,85,1200,85.3C1240,85,1280,171,1320,197.3C1360,224,1400,192,1420,176L1440,160L1440,320L1420,320C1400,320,1360,320,1320,320C1280,320,1240,320,1200,320C1160,320,1120,320,1080,320C1040,320,1000,320,960,320C920,320,880,320,840,320C800,320,760,320,720,320C680,320,640,320,600,320C560,320,520,320,480,320C440,320,400,320,360,320C320,320,280,320,240,320C200,320,160,320,120,320C80,320,40,320,20,320L0,320Z"></path></svg>
+
+        </div>   
+        <!-- info -->
+        <div class="info">
+          <!-- <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-10 col-11 mx-auto">
+                <div class="row mt-5 gx-3">
+                  <div class="card p-4">
+                    <div class="container">
+                      <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+                        <div class="col" style="margin-left: 70px;">
+                          <div class="p-3 border bg-light"><div class="head">Learn Anything Online</div>
+                          <img src="images/download.jpeg" width="50%" height="200">
+                          <p class="para">E-learning is a type of learning conducted digitally via electronic media, 
+                            typically involving the internet. It can be accessed via most electronic 
+                            devices including a computer, laptop, tablet or smartphone, making it a 
+                            versatile and easy way for students to learn wherever they are.</p>
+                        </div>
+                        </div>
+                        <div class="col" style="margin-left: 70px;">
+                          <div class="p-3 border bg-light"><div class="head">Talk To Our Experts</div>
+                          <img src="images/images (1).jpeg" width="50%" height="200">
+                          <p class="para">E-learning is a type of learning conducted digitally via electronic media, 
+                            typically involving the internet. It can be accessed via most electronic 
+                            devices including a computer, laptop, tablet or smartphone, making it a 
+                            versatile and easy way for students to learn wherever they are.</p>
+                        </div>
+                        </div>
+                        <div class="col" style="margin-left: 70px;">
+                          <div class="p-3 border bg-light"><div class="head">Communicate With People</div>
+                          <img src="images/images.jpeg" width="50%" height="200">
+                          <p class="para">E-learning is a type of learning conducted digitally via electronic media, 
+                            typically involving the internet. It can be accessed via most electronic 
+                            devices including a computer, laptop, tablet or smartphone, making it a 
+                            versatile and easy way for students to learn wherever they are.</p>
+                        </div>
+                        </div>
+                    </div> 
+            
+
+
+                  </div>
+                </div>    
+              </div>
+            </div>
+
+          </div> -->
+          <div class="container">
+            <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+              <div class="col" style="margin-left: 70px;" >
+                <div class="p-3 border bg-light"><div class="head">Learn Anything Online</div>
+                <img src="images/download.jpeg" width="50%" height="200">
+                <p class="para">E-learning is a type of learning conducted digitally via electronic media, 
+                  typically involving the internet. It can be accessed via most electronic 
+                  devices including a computer, laptop, tablet or smartphone, making it a 
+                  versatile and easy way for students to learn wherever they are.</p>
+              </div>
+              </div>
+              <div class="col" style="margin-left: 70px;">
+                <div class="p-3 border bg-light"><div class="head">Talk To Our Experts</div>
+                <img src="images/images (1).jpeg" width="50%" height="200">
+                <p class="para">E-learning is a type of learning conducted digitally via electronic media, 
+                  typically involving the internet. It can be accessed via most electronic 
+                  devices including a computer, laptop, tablet or smartphone, making it a 
+                  versatile and easy way for students to learn wherever they are.</p>
+              </div>
+              </div>
+              <div class="col" style="margin-left: 70px;">
+                <div class="p-3 border bg-light"><div class="head">Communicate With People</div>
+                <img src="images/images.jpeg" width="50%" height="200">
+                <p class="para">E-learning is a type of learning conducted digitally via electronic media, 
+                  typically involving the internet. It can be accessed via most electronic 
+                  devices including a computer, laptop, tablet or smartphone, making it a 
+                  versatile and easy way for students to learn wherever they are.</p>
+              </div>
+              </div>
+          </div>           
+        </div>
+                  
+  </body>
+</html>

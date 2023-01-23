@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link rel="stylesheet"href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="main.js"></script>
+    </head>
+    <style>
+        .main{
+            background-size: 100% 100%;
+        }
+        .manu{ 
+          height: 100px;
+          background-color: rgba(149, 187, 218, 0.5);
+        }
+        .logo{
+          display: inline-flex;
+          margin-top: 20px;
+          margin-left: 20px;
+        }
+        .logo img{
+          height: 50px;
+          width: 50px;
+        }
+        .navbar{
+          float: right;
+          margin-right: 20px;
+          margin-top: 20px;
+        }
+        .navbar a{
+          width: 90px;
+        }
+        .btn:hover{
+          background: linear-gradient(rgb(124, 124, 212), rgb(71, 71, 202), rgb(204, 238, 229));
+        }
+        /* content */
+        .product-top img
+{
+      width:100%;
+      height:300px;
+}
+.overlay-right
+{   
+       display:block;
+       opacity:0;
+       position:absolute;
+       top:10%;
+       margin-left:0;
+       Width:70px;
+}
+/* .overlay-right  .fa
+{
+      cursor:pointer;
+      background-color:#fff;
+      color:#000;
+      height:35px;
+      width:35px;
+      font-size:20px;
+      padding:7px;
+      margin-top:5%;
+      margin-bottom:5%;
+}
+.overlay-right .btn-secondary
+{
+      background:none ! important;
+      border:none ! important;
+      box-shadow:none ! important;    
+} */
+.product-top:hover  .overlay-right
+{
+      opacity:1;
+      margin-left:5%;
+      transition: 0.5s;
+}
+
+/*-------------product-bottom css---------------------*/
+
+.product-button  .fa
+{
+      color:orange;
+       font-size:10px;
+}
+.product-button h3
+{
+       font-size:20px;
+       font-weight:bold;
+}
+.product-button h5
+{
+      font-size:15px;
+      padding-bottom:10px;
+}
+@media only screen and (max-width:980px)
+{
+       .product-top img
+{    
+          width:50%;
+        margin-left:30%;
+}
+}
+.new-products
+{
+      margin:50px 0;
+}
+    </style>
+    <body>
+        <div class="main">
+            <!-- navbar -->
+            <div class="manu">
+              <div class="logo">
+                <img src="images/4734043.png">
+              </div>
+              <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                      <a class="nav-link" href="about.html">AboutUs</a>
+                      <a class="nav-link active" href="cours.html">Courses</a>
+                      <a class="nav-link" href="contact.html">ContactUs</a>
+                    </div>
+                  </div>
+                </div>
+                </nav>
+            </div>
+
+
+            <!-- content -->
+            <section class="intro" style="background-color: rgb(135, 132, 174);">
+              <h4 class="h4" style="text-align: center;">Viral Marketing and How To Craft Contagious Content</h4>
+              <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-10 col-11 mx-auto">
+                        <div class="row mt-5 gx-3">
+        
+                            <!---- left side div -------> 
+        
+                            <div class="col-md-12 col-lg-8 col-11 mx-auto main_cart mb-lg-0 mb-5 shadow">
+                                <div class="card p-4">
+                                    <div class="row">
+                                        <!------ cart images row ------>
+                                        <h6>Course Heighlight</h6> 
+                                        <ul>
+                                            <li>Enroll for free</li>
+                                            <li>Flexible deadlines</li>
+                                            <li>Rich Learning Content</li>
+                                            <li>Learn from expert instructor </li>
+                                        </ul>
+                                    </div>
+                                </div>           
+                            </div>
+                            <hr/>
+                            <!---- left side div -------> 
+        
+                            <div class="col-md-12 col-lg-8 col-11 mx-auto main_cart mb-lg-0 mb-5 shadow">
+                                <div class="card p-4">
+                                    <div class="row">
+                                        <!------ cart images row ------>
+                                        <h6>Overview</h6> 
+                                        <h7 class="head" style="color:rgb(7, 95, 95); font-weight: bold;">Who should do this course?</h7>
+                                        <ul>
+                                          <li>This course is best suitable for Newbies & Intermediate Marketers looking for a 
+                                            progressive career in online marketing</li>
+                                        </ul>
+
+                                        <h7 class="head" style="color:rgb(7, 95, 95); font-weight: bold;">What are the course deliverables?</h7>
+                                        <ul>
+                                            <li>100% online course I Approx. 6 hours of course completion I Industry recognized certification I 
+                                                online support</li>
+                                        </ul>
+                                    </div>
+                                </div>           
+                            </div>
+                            <hr/>
+                            
+                            <!-- <div class="btn">
+                                <a href="login" style="color: black; text-decoration: none;">Go To Free Courses</a>
+                            </div> -->
+
+
+            <!-- Button trigger modal -->
+            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#login" style="color: black; text-decoration: none;">
+              Go To Free Courses
+            </button> 
+
+<!-- Modal for login page content -->
+<div class="modal fade" id="login">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header text-center">
+        <h4 class="modal-title text-center w-100 font-weight-bold">Login</h4>
+        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">&times;</button>
+      </div> 
+      <form onsubmit="return validated()" class="bg-light" action="software1.html">
+      <div class="modal-body mx-4">      
+        <div class="md-form">
+          <i class="fas fa-envelope prefix gray-text"></i>
+          <input type="email" class="form-control validate"id="email1">
+          <span id="email1_id" class="text-danger" font="weight-bold"></span>
+          <label data-error="wrong" data-sucsses="right">Email Address</label>
+        </div>
+
+        
+        <div class="md-form">
+          <i class="fas fa-lock prefix gray-text"></i>
+          <input type="password" class="form-control validate"id="pass1">
+          <span id="passwords1" class="text-danger" font="weight-bold"></span>
+          <label data-error="wrong" data-sucsses="right">Password</label>
+          <p class="font-small blue-text d-flex justify-content-center">Forgot<a href="#" class="blue-text ml-1">Password?</a></p>
+        </div>
+
+        <div class="text-center mb-3">
+          <button type="submit" class="btn btn-info">Login</button>
+          <!-- <button type="submit" type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#register">Register</button> -->
+        </div>
+        <p class="font-smalldark-gray-text d-flex justify-content-center">or login with:</p>
+        <div class="row my-3 justify-content-center">
+          <button type="button" class="btn btn-primary z-depth-1a"><i class="fa-brands fa-facebook-f text-center"></i></button> 
+          <button type="button" class="btn btn-info z-depth-1a"><i class="fa-brands fa-twitter text-center"></i></button> 
+          <button type="button" class="btn btn-danger z-depth-1a"><i class="fa-brands fa-google text-center"></i></button> 
+        </div>
+
+        <div class="text-center mb-3">
+          <p>Not yet a member?</p>
+          <!-- <button type="submit" type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#register" data-bs-dismiss="modal">Register</button> -->
+          <button type="submit" type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#register" >Register</button>
+        </div>
+        
+      </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal for register page content -->
+<div class="modal fade" id="register">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header text-center">
+        <h4 class="modal-title text-center w-100 font-weight-bold">Register</h4>  
+        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">&times;</button>    
+      </div>
+
+      <form onsubmit="return validate()" class="bg-light" action="software1.html">
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <i class="fas fa-user prefix gray-text"></i>
+          <input type="text" class="form-control validate" id="user">
+          <span id="username" class="text-danger" font="weight-bold"></span>
+          <label data-error="wrong" data-sucsses="right">Your Name</label>
+        </div>  
+        
+        
+          <div class="md-form mb-5">
+            <i class="fas fa-envelope prefix gray-text"></i>
+            <input type="email" class="form-control validate" id="email">
+            <span id="email_id" class="text-danger" font="weight-bold"></span>
+            <label data-error="wrong" data-sucsses="right">Email Address</label>
+          </div>
+  
+        
+        <div class="md-form mb-5">
+          <i class="fas fa-lock prefix gray-text"></i>
+          <input type="password" class="form-control validate" id="pass">
+          <span id="passwords" class="text-danger" font="weight-bold"></span>
+          <label data-error="wrong" data-sucsses="right">Password</label>
+        </div>
+      </div>
+      <div class="modal-footer d-flex justify-content-center">
+        <!-- <input type="submit" class="btn btn-info" name="submit" value="submit" autocomplete="off"> -->
+            <!-- <button type="submit" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#login" data-bs-dismiss="modal">Submit</button> -->
+            <button type="submit" class="btn btn-info">Submit</button>
+      </div>
+
+      </form>
+    </div>
+  </div>
+</div>
+
+                         </div>
+                    </div>
+                </div>
+            </div>
+
+          </section>
+
+
+<!---------------------courses----------------->
+
+     <section class="on-sale">
+      <div class="container">
+        <div class="title-box">
+         <h2>Similar Courses</h2>
+     </div>
+         <div class="row">
+         <div class="col-md-4">
+          <div class="product-top">
+            <img src= "images/16.26e7297a.webp">
+      <!-- <div class="overlay-right">
+        <button type="button" class="btn-btn-
+secondary" title="Quick Shop">
+      <i class="fa fa-eye" ></i>
+     </button>
+        <button type="button" class="btn-btn-
+secondary" title="Add to Wishlist">
+      <i class="fa fa-heart-o" ></i>
+     </button>
+
+         <button type="button" class="btn-btn-
+secondary" title="Add to Cart">   
+      <i class="fa fa-shopping-cart" ></i></a>
+     </button>
+       </div> -->
+     </div>   
+      <div class="product-button text-center">
+      <i class="fa fa-star" ></i>
+      <i class="fa fa-star" ></i>
+      <i class="fa fa-star" ></i>
+      <i class="fa fa-star" ></i>
+      <i class="fa fa-star-half-o" ></i>
+      <h3>Data Science and Machine Learning</h3>
+     </div>
+    </div>
+
+
+    <div class="col-md-4">
+        <div class="product-top">
+          <img src= "images/25.08ff6ca9.webp">
+    <!-- <div class="overlay-right">
+      <button type="button" class="btn-btn-
+secondary" title="Quick Shop">
+    <i class="fa fa-eye" ></i>
+   </button>
+      <button type="button" class="btn-btn-
+secondary" title="Add to Wishlist">
+    <i class="fa fa-heart-o" ></i>
+   </button>
+
+       <button type="button" class="btn-btn-
+secondary" title="Add to Cart">   
+    <i class="fa fa-shopping-cart" ></i></a>
+   </button>
+     </div> -->
+   </div>   
+    <div class="product-button text-center">
+    <i class="fa fa-star" ></i>
+    <i class="fa fa-star" ></i>
+    <i class="fa fa-star" ></i>
+    <i class="fa fa-star" ></i>
+    <i class="fa fa-star-half-o" ></i>
+    <h3>Simplilearn Data Scientist Master's Program</h3>
+   </div>
+  </div>
+
+
+         <div class="col-md-4">
+          <div class="product-top">
+            <img src= "images/1.c5db8cd6.webp">
+      <!-- <div class="overlay-right">
+        <button type="button" class="btn-btn-
+secondary" title="Quick Shop">
+      <i class="fa fa-eye" ></i>
+     </button>
+        <button type="button" class="btn-btn-
+secondary" title="Add to Wishlist">
+      <i class="fa fa-heart-o" ></i>
+     </button>
+        <button type="button" class="btn-btn-
+secondary" title="Add to Cart">
+      <i class="fa fa-shopping-cart" ></i></a>
+     </button>
+       </div> -->
+     </div>   
+      <div class="product-button text-center">
+      <i class="fa fa-star" ></i>
+      <i class="fa fa-star" ></i>
+      <i class="fa fa-star" ></i>
+      <i class="fa fa-star" ></i>
+      <i class="fa fa-star-half-o" ></i>
+      <h3>Business Administration</h3>
+     </div>
+    </div>
+  </div>
+ </div>
+</section>
+
+        </div>
+    </body>
+</html>

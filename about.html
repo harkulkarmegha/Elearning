@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <style>
+        .main{
+          height: 20vh;  
+          background: linear-gradient(rgb(88, 86, 86), rgb(6, 6, 76), rgb(67, 66, 66));
+       /* background-size: 100% 100%; */
+          /* overflow: hidden; */
+        }
+        .manu{ 
+          height: 100px;
+          background-color: rgba(149, 187, 218, 0.5);
+        }
+        .logo{
+          display: inline-flex;
+          margin-top: 20px;
+          margin-left: 20px;
+        }
+        .logo img{
+          height: 50px;
+          width: 50px;
+        }
+        .navbar{
+          float: right;
+          margin-right: 20px;
+          margin-top: 20px;
+        }
+        .navbar a{
+          width: 90px;
+        }
+        /* content */
+
+        /* .header{
+            float: right;
+        } */
+        /* .header p{
+            float: inline-end;
+        } */
+        .image{
+            display: inline-flex;
+            width: 50%;
+            margin-top: 150px;
+            /* filter:grayscale(10%);
+            transition:1s; */
+        }  
+        /* .image:hover{
+          filter:grayscale(0);
+        transform:scale(1.1);
+        }   */
+        .content{
+  content: '';
+  border-top: 400px solid rgba(67, 5, 14, 0.3); 
+  border-right: 300px solid transparent;
+  margin-top: 10px;
+  margin-left: 5px;
+  position: absolute;
+  display: flex;
+}
+.content1{
+  content: '';
+  border-bottom: 400px solid rgba(119, 8, 8, 0.3); 
+  border-left: 300px solid transparent;
+  margin-top: 130px;
+  margin-left: 90px;
+  position: absolute;
+  display: flex;
+}
+.content3{
+  content: '';
+  border-top: 500px solid rgba(127, 58, 21, 0.3); 
+  border-right:200px solid transparent;
+  margin-top: 40px;
+  margin-left: 40px;
+  position: absolute;
+  display: flex;
+}
+.content4{
+  content: '';
+  border-bottom: 400px solid rgba(61, 65, 3, 0.3); 
+  border-left:350px solid transparent;
+  margin-top: 100px;
+  margin-left: 20px;
+  position: absolute;
+  display: flex;
+}
+        .image img{
+            margin-top: 100px;
+            margin-left: 40px;
+            width: 300px;
+            height: 300px;
+            /* filter:grayscale(10%);
+            transition:1s; */
+        }
+        /* .image img:hover{
+        filter:grayscale(0);
+        transform:scale(1.1);
+        } */
+        .con {
+          display: inline-block;
+          margin-top: 200px;
+        }
+        .float h3{
+          margin-top: 0px;
+          font-style: oblique;
+          display: inline-flex;
+          color: #000;
+        }
+        .p{
+          font-size: 20px;
+          width: 390px;
+          margin-top: 20px;
+          color: #000;
+          font-family: 'Dancing Script', cursive;
+          /* overflow: hidden; */
+        }
+        @media only screen and (max-width:980px){
+          .float h3{
+          margin-top: 0px;
+          font-style: oblique;
+          display: inline-flex;
+          color: #000;
+        }
+        .p p{
+          font-size: 20px;
+          width: 300px;
+          margin-top: 20px;
+          color: #000;
+          font-family: 'Dancing Script', cursive;
+        }
+        }
+        .about{
+          margin-top: 100px;   
+          color: #000;
+          background: linear-gradient(rgb(88, 86, 86), rgb(116, 116, 203), rgb(67, 66, 66));
+        }
+        .about h2{
+          font-size: 50px;
+        }
+        .para{
+          color: #000;
+          font-family: 'Dancing Script', cursive;
+        }
+    </style>
+  </head>  
+  <body>
+
+    <div class="main">
+        <!-- navbar -->
+        <div class="manu">
+          <div class="logo">
+            <img src="images/4734043.png">
+          </div>
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                  <a class="nav-link active" href="about.html">AboutUs</a>
+                  <a class="nav-link" href="cours.html">Courses</a>
+                  <a class="nav-link" href="contact.html">ContactUs</a>
+                </div>
+              </div>
+            </div>
+            </nav>
+        </div>
+        <!-- content -->
+        <div class="image">
+            <div class="content"></div>
+            <div class="content1"></div>
+            <div class="content2"></div>
+            <div class="content3"></div>
+            <div class="content4"></div>
+            <img src="images/images10.jpeg">
+        </div>
+
+
+
+        <div class="con mx-auto">
+          <div class="float">
+            <h3 class="float-left">KNOWLEDGE AT YOUR FINGERTIPS</h3>
+        </div>
+        <div class="p mx-auto">
+          <P class="text-center">E-learning is a type of learning conducted digitally via electronic media, 
+            typically involving the internet. It can be accessed via most electronic 
+            devices including a computer, laptop, tablet or smartphone, making it a 
+            versatile and easy way for students to learn wherever they are.</P>
+        </div>
+        </div>
+
+        <!-- about -->
+        <div class="about">
+          <h2 class="text-center">About Us</h2>
+        </div>
+        <div class="para">
+          <p class="text-center">A learning system based on formalised teaching but with the help of electronic resources is known as E-learning. While teaching can be based in or out of the classrooms, the use of computers and the Internet forms the major component of E-learning. E-learning can also be termed as a network enabled transfer of skills and knowledge, and the delivery of education is made to a large number of recipients at the same or different times. Earlier, it was not accepted wholeheartedly as it was assumed that this system lacked the human element required in learning.
+
+            However, with the rapid progress in technology and the advancement in learning systems, it is now embraced by the masses. The introduction of computers was the basis of this revolution and with the passage of time, as we get hooked to smartphones, tablets, etc, these devices now have an importance place in the classrooms for learning. Books are gradually getting replaced by electronic educational materials like optical discs or pen drives. Knowledge can also be shared via the Internet, which is accessible 24/7, anywhere, anytime.
+            
+            Description: E-learning has proved to be the best means in the corporate sector, especially when training programs are conducted by MNCs for professionals across the globe and employees are able to acquire important skills while sitting in a board room, or by having seminars, which are conducted for employees of the same or the different organizations under one roof. The schools which use E-learning technologies are a step ahead of those which still have the traditional approach towards learning.
+            
+            No doubt, it is equally important to take forward the concept of non-electronic teaching with the help of books and lectures, but the importance and effectiveness of technology-based learning cannot be taken lightly or ignored completely. It is believed that the human brain can easily remember and relate to what is seen and heard via moving pictures or videos. It has also been found that visuals, apart from holding the attention of the student, are also retained by the brain for longer periods. Various sectors, including agriculture, medicine, education, services, business, and government setups are adapting to the concept of E-learning which helps in the progress of a nation.</p>
+        </div>
+       
+
+
+    </div>    
+  </body>
+</html>  
+
+
+
+
+<!-- A learning system based on formalised teaching but with the help of electronic resources is known as E-learning. While teaching can be based in or out of the classrooms, the use of computers and the Internet forms the major component of E-learning. E-learning can also be termed as a network enabled transfer of skills and knowledge, and the delivery of education is made to a large number of recipients at the same or different times. Earlier, it was not accepted wholeheartedly as it was assumed that this system lacked the human element required in learning.
+
+However, with the rapid progress in technology and the advancement in learning systems, it is now embraced by the masses. The introduction of computers was the basis of this revolution and with the passage of time, as we get hooked to smartphones, tablets, etc, these devices now have an importance place in the classrooms for learning. Books are gradually getting replaced by electronic educational materials like optical discs or pen drives. Knowledge can also be shared via the Internet, which is accessible 24/7, anywhere, anytime.
+
+Description: E-learning has proved to be the best means in the corporate sector, especially when training programs are conducted by MNCs for professionals across the globe and employees are able to acquire important skills while sitting in a board room, or by having seminars, which are conducted for employees of the same or the different organizations under one roof. The schools which use E-learning technologies are a step ahead of those which still have the traditional approach towards learning.
+
+No doubt, it is equally important to take forward the concept of non-electronic teaching with the help of books and lectures, but the importance and effectiveness of technology-based learning cannot be taken lightly or ignored completely. It is believed that the human brain can easily remember and relate to what is seen and heard via moving pictures or videos. It has also been found that visuals, apart from holding the attention of the student, are also retained by the brain for longer periods. Various sectors, including agriculture, medicine, education, services, business, and government setups are adapting to the concept of E-learning which helps in the progress of a nation. -->
+
+
+
+
+
+
+
+
+   
